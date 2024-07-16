@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Oranienbaum&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Markup Test</title>
   </head>
@@ -265,7 +266,76 @@
           </div>
         </div>
       </section>
+      <section class="form-section">
+        <div class="container">
+          <h2 class="section-title">Акційні пропозиції</h2>
+          <div class="form-section__content">
+            <div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/sliderImg.png" alt="logo" />
+                    <h3>Акція "-40% на пробне заняття з кінезітерапії"</h3>
+                    <p>
+                      Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною пропозицією
+                      вартістю 680 408 грн.
+                    </p>
+                    <a href="#">Дізнатись більше></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/sliderImg.png" alt="logo" />
+                    <h3>Акція "-40% на пробне заняття з кінезітерапії"</h3>
+                    <p>
+                      Маєте чудову нагоду потурбуватись про власне здоров’я за вигідною пропозицією
+                      вартістю 680 408 грн.
+                    </p>
+                    <a href="#">Дізнатись більше></a>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="form-container">
+              <h1>Czekamy na Ciebie!</h1>
+              <form id="contactForm">
+                <label for="name" class="label label-name1">Imię i nazwisko</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="name" class="label label-name2">Imię i nazwisko</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="phone" class="label label-phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+48 XXXXXXXX" required />
+
+                <label for="email" class="label label-email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="name@gmail.com" required />
+
+                <div class="checkbox-container">
+                  <input type="checkbox" id="consent" name="consent" required class="checkbox" />
+                  <label for="consent" class="label-checkbox"
+                    >Wypełnienie formularza zgłoszeniowego jest równoznaczne z wyrażeniem zgody na
+                    przetwarzanie danych osobowych, otrzymywanie newslettera, oraz kontakt
+                    telefoniczny</label
+                  >
+                </div>
+
+                <button type="submit" class="form-btn">Wyślij</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>
