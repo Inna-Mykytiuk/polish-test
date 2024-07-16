@@ -23,7 +23,9 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <img src="./assets/images/logo.png" alt="logo" class="logo" />
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="logo" class="logo" />
+          </a>
           <ul class="nav-list">
             <li class="nav-item">
               <a href="#" class="nav-link">Nasi Lekarze</a>
@@ -32,8 +34,8 @@
               <a href="#" class="nav-link">Kontact</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"
-                >Programs
+              <a href="#" class="nav-link">
+                Programs
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -48,14 +50,10 @@
                   />
                 </svg>
               </a>
-
-              <!-- <svg width="15" height="15" class="arrow-icon1">
-              <use href="./assets/icons/icons.svg#icon-arrowWhite"></use>
-            </svg> -->
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"
-                >O nas
+              <a href="#" class="nav-link">
+                O nas
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -72,7 +70,13 @@
               </a>
             </li>
           </ul>
-
+          <div class="burger-menu">
+            <button class="burger-btn" type="button" aria-label="burger-menu">
+              <svg width="30" height="30" class="icon-burger">
+                <use href="./assets/icons/icons.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </div>
           <div class="profile-block">
             <button class="profile-btn" type="button" aria-label="profile-button">
               <svg width="15" height="17" class="icon-profile">
@@ -82,8 +86,8 @@
             <button class="contact-btn" type="button" aria-label="contact-button">
               Skontaktuj się z nami
             </button>
-            <a href="#" class="nav-link"
-              >PL
+            <a href="#" class="nav-link">
+              PL
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -103,9 +107,164 @@
         </nav>
       </div>
     </header>
-
+    <div class="mobile-menu">
+      <button class="close-btn" type="button" aria-label="close-menu">
+        <svg width="30" height="30" class="icon-cross">
+          <use href="./assets/icons/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Nasi Lekarze</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Kontact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            Programs
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="20"
+              viewBox="0 0 25 20"
+              fill="none"
+            >
+              <path
+                d="M9.41479 9.15601L12.4148 12.156L15.4148 9.15601"
+                stroke="#2B3F5B"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            O nas
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="20"
+              viewBox="0 0 25 20"
+              fill="none"
+            >
+              <path
+                d="M9.41479 9.15601L12.4148 12.156L15.4148 9.15601"
+                stroke="#2B3F5B"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-profile-block">
+        <button class="profile-btn" type="button" aria-label="profile-button">
+          <svg width="15" height="17" class="icon-profile">
+            <use href="./assets/icons/icons.svg#icon-profile"></use>
+          </svg>
+        </button>
+        <button class="contact-btn" type="button" aria-label="contact-button">
+          Skontaktuj się z nami
+        </button>
+        <a href="#" class="nav-link">
+          PL
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="20"
+            viewBox="0 0 25 20"
+            fill="none"
+          >
+            <path
+              d="M9.41479 9.15601L12.4148 12.156L15.4148 9.15601"
+              stroke="#2B3F5B"
+              stroke-width="1.5"
+            />
+          </svg>
+        </a>
+        <img src="./assets/images/sun&moon.png" alt="logo" class="logo" />
+      </div>
+    </div>
     <main>
-      <section class="content-section"></section>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-content__text">
+              <h1 class="section-title">Aкції та Акційні пакети</h1>
+              <p class="hero-text">
+                Ми завжди прагнемо підвищити рівень сервісу надаваних медичних послуг, і вдячні вам
+                за залишений позитивний відгук. Ми беремо до уваги всі коментарі та побажання, які
+                відносяться до нашої роботи. Дякуємо за ваш вибір.
+              </p>
+            </div>
+            <img src="./assets/images/hero.png" alt="logo" class="hero-img" />
+          </div>
+        </div>
+      </section>
+      <section class="services-section">
+        <div class="container">
+          <h3 class="section-title">Пакети</h3>
+          <div class="services-list">
+            <div class="services-item">
+              <h3 class="card-title">УЗД всього організму для жінок</h3>
+              <div class="card-content">
+                <ul class="card-list">
+                  <li>УЗД всього організму для жінок</li>
+                  <li>Щитовидна залоза</li>
+                  <li>Молочні залози</li>
+                  <li>
+                    Органи черевної порожнини ( печінка, жовчний міхур, підшлункова залоза,
+                    селезінка)
+                  </li>
+                  <li>Нирки та наднирокові залози</li>
+                  <li>Органи малого тазу</li>
+                </ul>
+                <p class="card-price">Ціна — <span>2600</span> грн.</p>
+                <p>Ціна по акції — 1280 грн</p>
+              </div>
+              <button type="button" class="contact-btn">Переглянути детальніше</button>
+            </div>
+            <div class="services-item">
+              <h3 class="card-title">УЗД всього організму для жінок</h3>
+              <div class="card-content">
+                <ul class="card-list">
+                  <li>УЗД всього організму для жінок</li>
+                  <li>Щитовидна залоза</li>
+                  <li>Молочні залози</li>
+                  <li>
+                    Органи черевної порожнини ( печінка, жовчний міхур, підшлункова залоза,
+                    селезінка)
+                  </li>
+                  <li>Нирки та наднирокові залози</li>
+                  <li>Органи малого тазу</li>
+                </ul>
+                <p class="card-price">Ціна — <span>2600</span> грн.</p>
+                <p>Ціна по акції — 1280 грн</p>
+              </div>
+              <button type="button" class="contact-btn">Переглянути детальніше</button>
+            </div>
+            <div class="services-item">
+              <h3 class="card-title">УЗД всього організму для жінок</h3>
+              <div class="card-content">
+                <ul class="card-list">
+                  <li>УЗД всього організму для жінок</li>
+                  <li>Щитовидна залоза</li>
+                  <li>Молочні залози</li>
+                  <li>
+                    Органи черевної порожнини ( печінка, жовчний міхур, підшлункова залоза,
+                    селезінка)
+                  </li>
+                  <li>Нирки та наднирокові залози</li>
+                  <li>Органи малого тазу</li>
+                </ul>
+                <p class="card-price">Ціна — <span>2600</span> грн.</p>
+                <p>Ціна по акції — 1280 грн</p>
+              </div>
+              <button type="button" class="contact-btn">Переглянути детальніше</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./index.js"></script>
   </body>
