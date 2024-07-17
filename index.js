@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 });
 
+/*contact form*/
+
 document.getElementById('contactForm').addEventListener('submit', function (event) {
   event.preventDefault();
 

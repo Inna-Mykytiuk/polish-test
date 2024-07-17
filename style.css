@@ -80,7 +80,7 @@ img {
 
 body::-webkit-scrollbar {
   appearance: none;
-  background: #000;
+  background: var(--text-black);
   width: 5px;
 }
 
@@ -164,7 +164,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-item:hover svg path {
-  stroke: #CC8E1E;
+  stroke: var(--accent-color);
 }
 
 .nav-link {
@@ -182,7 +182,7 @@ body::-webkit-scrollbar-thumb {
   top: 25px;
   left: 0;
   gap: 15px;
-  background-color: #fff;
+  background-color: var(--text-white);
   z-index: 10;
   border-radius: 5px;
 }
@@ -226,7 +226,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
 
-  fill: #CC8E1E;
+  fill: var(--accent-color);
 }
 
 .contact-btn {
@@ -238,12 +238,12 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 
   border-radius: 50px;
-  border: 0.5px solid #CC8E1E;
+  border: 0.5px solid var(--accent-color);
   background: rgba(204, 142, 30, 0.10);
 
-  color: #CC8E1E;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  color: var(--accent-color);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   font-weight: 500;
   line-height: 24px;
   transition: all .3s ease;
@@ -268,7 +268,7 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--text-white);
   z-index: 1000;
   padding: 20px;
 }
@@ -346,7 +346,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
 
-  fill: #CC8E1E;
+  fill: var(--accent-color);
 }
 
 
@@ -369,6 +369,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   width: 100%;
   gap: 24px;
+  margin-bottom: 50px;
 }
 
 .hero-img {
@@ -377,7 +378,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-title {
-  color: #2B3F5B;
+  color: var(--text-main);
   font-family: "Oranienbaum",
     serif;
   font-size: 40px;
@@ -388,9 +389,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-text {
-  color: #2B3F5B;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  color: var(--text-main);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -422,7 +423,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-title {
-  color: #CC8E1E;
+  color: var(--accent-color);
   font-family: "Oranienbaum",
     serif;
   font-size: 24px;
@@ -454,12 +455,12 @@ body::-webkit-scrollbar-thumb {
 
   border-radius: 50px;
   border: none;
-  background: #CC8E1E;
+  background: var(--accent-color);
 
   color: white;
-  border: 0.5px solid #CC8E1E;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  border: 0.5px solid var(--accent-color);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   font-weight: 500;
   line-height: 24px;
   transition: all .3s ease;
@@ -504,8 +505,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .form-container h1 {
-  color: #2B3F5B;
-  font-family: "Oranienbaum", serif;
+  color: var(--text-main);
+  font-family: var(--font-secondary);
   font-size: 32px;
   font-weight: 400;
   line-height: 40px;
@@ -535,13 +536,13 @@ input[type="email"] {
   border-radius: 10px;
   border: 1px solid rgba(204, 142, 30, 0.60);
 
-  background: #F6F5F2;
+  background: var(--bg-color);
 }
 
 input::placeholder {
   color: #B6BBC3;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -554,7 +555,7 @@ label {
 
   color: #646E7C;
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-base);
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -585,9 +586,9 @@ label {
 }
 
 .label-checkbox {
-  color: #2B3F5B;
+  color: var(--text-main);
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-base);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -610,7 +611,7 @@ input[type="checkbox"] {
   border-radius: 5px;
   border: 1px solid #B6BBC3;
 
-  background: #F6F5F2;
+  background: var(--bg-color);
   margin-right: 5px;
   display: flex;
   align-items: center;
@@ -643,7 +644,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: var(--font-size-base);
 }
 
 
@@ -660,7 +661,7 @@ button {
   width: 320px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--text-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -703,18 +704,18 @@ button {
 }
 
 .slider-text p {
-  color: #2B3F5B;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  color: var(--text-main);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   font-weight: 400;
   line-height: 24px;
   text-align: start;
 }
 
 .slider-text a {
-  color: #CC8E1E;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  color: var(--accent-color);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   font-weight: 500;
   line-height: 24px;
   transition: all .3s ease;
@@ -722,12 +723,12 @@ button {
 }
 
 .slider-text a:hover {
-  color: #2B3F5B;
+  color: var(--text-main);
 }
 
 .slider-title {
-  color: #000;
-  font-family: "Oranienbaum", serif;
+  color: var(--text-black);
+  font-family: var(--font-secondary);
   font-size: 32px;
   font-weight: 400;
   line-height: 40px;
@@ -748,19 +749,19 @@ button {
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(204, 142, 30, 0.27);
-  background: #FFF;
+  background: var(--text-white);
   gap: 26px;
   max-height: 400px;
   overflow-y: auto;
 }
 
 .price-header {
-  background-color: #FAF4E8;
+  background-color: var(--beige-base);
   padding: 16px 0;
-  color: #2B3F5B;
+  color: var(--text-main);
 
   text-align: center;
-  font-family: "Oranienbaum", serif;
+  font-family: var(--font-secondary);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -777,25 +778,25 @@ button {
 .price-item {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #FAF4E8;
+  background-color: var(--beige-base);
   padding: 10px 0;
   gap: 10px;
 }
 
 .price-item {
-  background: #F1EFE9;
-  font-family: "Oranienbaum", serif;
+  background: var(--beige-secondary);
+  font-family: var(--font-secondary);
 }
 
 .price-header p {
-  font-size: 16px;
+  font-size: var(--font-size-base);
 }
 
 
 .price-header p,
 .price-item p {
   text-align: center;
-  font-size: 16px;
+  font-size: var(--font-size-base);
 }
 
 
@@ -807,7 +808,7 @@ button {
 .price-item p:nth-child(2) {
   text-align: start;
   align-self: center;
-  font-size: 16px;
+  font-size: var(--font-size-base);
 }
 
 
@@ -819,14 +820,14 @@ button {
 }
 
 .price-block::-webkit-scrollbar-track {
-  background: #FFF;
+  background: var(--text-white);
   border-radius: 10px;
 }
 
 .price-block::-webkit-scrollbar-thumb {
   background-color: #ffa500;
   border-radius: 10px;
-  border: 3px solid #FFF;
+  border: 3px solid var(--text-white);
 }
 
 
@@ -856,8 +857,8 @@ button {
 }
 
 .title-content h2 {
-  color: #CC8E1E;
-  font-family: "Oranienbaum", serif;
+  color: var(--accent-color);
+  font-family: var(--font-secondary);
   font-size: 54px;
   font-style: normal;
   font-weight: 400;
@@ -865,7 +866,7 @@ button {
 }
 
 .title-content h2:nth-child(2) {
-  color: #000;
+  color: var(--text-black);
   padding-left: 0;
 }
 
@@ -896,10 +897,10 @@ button {
 
 .contact-info p:nth-child(1),
 .contact-email p:nth-child(1) {
-  color: #2B3F5B;
+  color: var(--text-main);
 
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -908,9 +909,8 @@ button {
 
 .contact-info p:nth-child(2),
 .contact-email p:nth-child(2) {
-  color: #2B3F5B;
-
-  font-family: "Oranienbaum", serif;
+  color: var(--text-main);
+  font-family: var(--font-secondary);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -926,10 +926,10 @@ button {
 }
 
 .contact-adress p:nth-child(1) {
-  color: #FFF;
+  color: var(--text-white);
 
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -937,9 +937,9 @@ button {
 
 .contact-adress p:nth-child(2),
 .contact-adress p span {
-  color: #FFF;
+  color: var(--text-white);
 
-  font-family: "Oranienbaum", serif;
+  font-family: var(--font-secondary);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -947,9 +947,9 @@ button {
 }
 
 .contact-adress span {
-  color: #FFF;
+  color: var(--text-white);
 
-  font-family: "Oranienbaum", serif;
+  font-family: var(--font-secondary);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -991,7 +991,7 @@ button {
   align-items: center;
   justify-content: center;
 
-  fill: #CC8E1E;
+  fill: var(--accent-color);
   transition: all .3s ease;
 }
 
@@ -1001,7 +1001,7 @@ button {
 
 .contact-icon.telegram {
   position: relative;
-  fill: #2B3F5B;
+  fill: var(--text-main);
   left: 0;
   top: 0;
   z-index: 10;
@@ -1052,9 +1052,9 @@ footer {
 }
 
 .footer-block__second ul li a {
-  color: #CC8E1E;
+  color: var(--accent-color);
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-base);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1074,9 +1074,9 @@ footer {
 }
 
 .footer-block__third li a {
-  color: #CC8E1E;
+  color: var(--accent-color);
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-base);
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1096,9 +1096,9 @@ footer {
 }
 
 .footer-second__links a {
-  color: #2B3F5B;
+  color: var(--text-main);
 
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-base);
   font-size: 14px;
   font-weight: 500;
   line-height: 150%;
@@ -1116,7 +1116,6 @@ footer {
   width: 100%;
   margin-bottom: 40px;
 }
-
 
 
 
@@ -1157,6 +1156,7 @@ footer {
   .hero-content__text {
     width: 413px;
     gap: 24px;
+
   }
 
   .price-section {
@@ -1220,6 +1220,10 @@ footer {
 @media (min-width: 1280px) {
   .hero-content {
     flex-direction: row;
+  }
+
+  .hero-content__text {
+    margin-bottom: 0;
   }
 
   .form-section__content {
