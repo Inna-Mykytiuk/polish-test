@@ -354,7 +354,7 @@ body::-webkit-scrollbar-thumb {
 
 .hero-section {
   display: flex;
-  margin-top: 87px;
+  margin-top: 57px;
 }
 
 .hero-content {
@@ -1129,6 +1129,10 @@ footer {
 
   .hero-img {
     height: 456px;
+  }
+
+  .hero-section {
+    margin-top: 87px;
   }
 
   .swiper {
