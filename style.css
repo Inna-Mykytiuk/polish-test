@@ -985,6 +985,13 @@ button {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  color: #FFF;
+
+  font-family: var(--font-secondary);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
 }
 
 .map-text {
