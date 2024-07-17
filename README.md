@@ -79,5 +79,5 @@ us.
 Contains useful links, such as social media profiles and additional resources related to our medical
 services.
 
-![preview](https://github.com/Inna-Mykytiuk/boat/blob/main/public/111.jpg)
-![preview](https://github.com/Inna-Mykytiuk/boat/blob/main/public/222.jpg)
+![preview](https://github.com/Inna-Mykytiuk/polish-test/blob/main/assets/111.jpg)
+![preview](https://github.com/Inna-Mykytiuk/polish-test/blob/main/assets/222.jpg)
