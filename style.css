@@ -987,6 +987,16 @@ button {
   gap: 24px;
 }
 
+.map-text {
+  color: #FFF;
+
+  font-family: var(--font-secondary);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
 .contact-list {
   display: flex;
   gap: 30px;
