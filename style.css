@@ -803,11 +803,10 @@ button {
 .title-content h2 {
   color: #CC8E1E;
   font-family: "Oranienbaum", serif;
-  font-size: 64px;
+  font-size: 54px;
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
-  padding-left: 35px;
 }
 
 .title-content h2:nth-child(2) {
@@ -817,7 +816,6 @@ button {
 
 .title-content h2:nth-child(3) {
   text-align: end;
-  padding-right: 40px;
 }
 
 /*contact-section*/
@@ -914,6 +912,14 @@ button {
   left: -40px;
 }
 
+.map-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
 .contact-list {
   display: flex;
   gap: 30px;
@@ -939,9 +945,14 @@ button {
   fill: #2B3F5B;
 }
 
-/* .contact-icon.footer.facebook {
+.contact-icon.telegram {
+  position: relative;
   fill: #2B3F5B;
-} */
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
 
 .contact-icon:hover {
   fill: #926514;
@@ -1147,16 +1158,12 @@ footer {
 
   .title-content h2 {
     font-size: 82px;
+    padding-left: 35px;
   }
 
-
-
-
-
-
-  /* .footer-block__second {
-    margin-right: auto;
-  } */
+  .title-content h2:nth-child(3) {
+    padding-right: 40px;
+  }
 
 }
 
@@ -1208,7 +1215,7 @@ footer {
     z-index: -1;
     width: 386px;
     top: -130px;
-    left: -90px;
+    left: -70px;
   }
 
   .footer-block__second ul {
@@ -1233,6 +1240,10 @@ footer {
 
   .block-wrapper {
     margin-bottom: 0;
+  }
+
+  .map-block {
+    flex-direction: row;
   }
 
 
