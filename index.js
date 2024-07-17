@@ -5,11 +5,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
   burgerBtn.addEventListener('click', function () {
     mobileMenu.classList.add('active');
+    document.body.style.overflow = 'hidden';
   });
 
   closeBtn.addEventListener('click', function () {
     mobileMenu.classList.remove('active');
+    document.body.style.overflow = 'unset';
   });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = 'unset';
+    }
+  });
+
+  return () => {
+    document.body.style.overflow = 'unset';
+  };
 });
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
@@ -32,3 +45,23 @@ document.getElementById('contactForm').addEventListener('submit', function (even
   }
 });
 
+/*dropdown*/
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdownToggles = document.querySelectorAll('.nav-link.dropdown-toggle');
+
+  dropdownToggles.forEach(function (dropdownToggle) {
+    dropdownToggle.addEventListener('click', function (event) {
+      event.preventDefault();
+      this.classList.toggle('active');
+    });
+  });
+
+  document.addEventListener('click', function (event) {
+    dropdownToggles.forEach(function (dropdownToggle) {
+      const dropdownMenu = dropdownToggle.nextElementSibling;
+      if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownToggle.classList.remove('active');
+      }
+    });
+  });
+});

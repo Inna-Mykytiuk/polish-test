@@ -121,23 +121,9 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
 /* header */
 
-/* .arrow-icon {
-  width: 24px;
-  height: 19px;
-  display: block;
-  align-items: center;
-  justify-content: center;
-
-  stroke: black;
-  fill: black;
-} */
-
 .header {
-
   padding-top: 18px;
 }
 
@@ -159,12 +145,17 @@ body::-webkit-scrollbar-thumb {
 .nav-item {
   display: flex;
   align-items: center;
+  position: relative;
   justify-content: space-between;
-  transition: all .3s ease;
+
   cursor: pointer;
 }
 
-.nav-item:hover {
+.nav-item .nav-link {
+  transition: all .3s ease;
+}
+
+.nav-item:hover .nav-link {
   color: var(--accent-color)
 }
 
@@ -180,6 +171,37 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+.dropdown-menu {
+  display: none;
+  padding: 5px;
+  flex-direction: column;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  gap: 15px;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.fixed {
+  position: relative;
+}
+
+
+.dropdown-menu a {
+  transition: all .3s ease;
+}
+
+.dropdown-menu a:hover {
+  color: var(--accent-color);
+}
+
+.nav-link.active+.dropdown-menu {
+  display: flex;
 }
 
 .profile-btn {
@@ -208,6 +230,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-btn {
+  position: relative;
   display: flex;
   height: 40px;
   padding: 15px 20px;
@@ -496,8 +519,6 @@ form {
   flex-direction: column;
 }
 
-
-
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
@@ -578,14 +599,13 @@ label {
   align-items: start;
   cursor: pointer;
   margin-top: 16px;
-
 }
 
 input[type="checkbox"] {
   position: relative;
   appearance: none;
   --webkit-appearance: none;
-  width: 77px;
+  width: 113px;
   height: 24px;
   border-radius: 5px;
   border: 1px solid #B6BBC3;
@@ -605,7 +625,6 @@ input[type="checkbox"]::after {
   height: 24px;
   margin-top: 5px;
   margin-left: 3.5px;
-
 }
 
 input[type="checkbox"]:checked {
@@ -616,11 +635,6 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked:after {
   display: block;
 }
-
-/* .checkbox-container .checkbox {
-  margin-right: 5px;
-} */
-
 
 button {
   padding: 10px;
@@ -633,7 +647,9 @@ button {
 }
 
 
+
 /*slider*/
+
 .swiper {
   width: 320px;
   height: 100%;
@@ -718,6 +734,8 @@ button {
   text-align: start;
 }
 
+
+
 /*proce-section*/
 
 .price-section {
@@ -746,7 +764,6 @@ button {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-
 }
 
 .price-list {
@@ -793,6 +810,8 @@ button {
   font-size: 16px;
 }
 
+
+
 /*scroll-bar*/
 
 .price-block::-webkit-scrollbar {
@@ -809,6 +828,8 @@ button {
   border-radius: 10px;
   border: 3px solid #FFF;
 }
+
+
 
 /*title-section*/
 
@@ -852,6 +873,8 @@ button {
   text-align: end;
 }
 
+
+
 /*contact-section*/
 
 .contact-block {
@@ -887,8 +910,7 @@ button {
 .contact-email p:nth-child(2) {
   color: #2B3F5B;
 
-  font-family: "Oranienbaum",
-    serif;
+  font-family: "Oranienbaum", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -917,8 +939,7 @@ button {
 .contact-adress p span {
   color: #FFF;
 
-  font-family: "Oranienbaum",
-    serif;
+  font-family: "Oranienbaum", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -928,8 +949,7 @@ button {
 .contact-adress span {
   color: #FFF;
 
-  font-family: "Oranienbaum",
-    serif;
+  font-family: "Oranienbaum", serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -987,10 +1007,10 @@ button {
   z-index: 10;
 }
 
-
 .contact-icon:hover {
   fill: #926514;
 }
+
 
 
 /*footer*/
@@ -1004,7 +1024,6 @@ footer {
 .footer-content {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -1025,7 +1044,6 @@ footer {
 .footer-block__second {
   display: flex;
   flex-direction: column;
-  /* margin-right: auto; */
 }
 
 .footer-block__second ul {
@@ -1078,7 +1096,6 @@ footer {
 }
 
 .footer-second__links a {
-  /* width: 270px; */
   color: #2B3F5B;
 
   font-family: "Inter", sans-serif;
@@ -1110,7 +1127,6 @@ footer {
     flex-direction: row;
     gap: 10px;
   }
-
 
   .hero-img {
     height: 456px;
@@ -1170,14 +1186,14 @@ footer {
     flex-direction: row;
   }
 
-
+  input[type="checkbox"] {
+    width: 77px;
+  }
 }
 
 
 
-
-
-@media (min-width: 1040px) {
+@media (min-width: 1024px) {
   .form-section {
     margin-top: 116px;
   }
@@ -1198,7 +1214,6 @@ footer {
   .title-content h2:nth-child(3) {
     padding-right: 40px;
   }
-
 }
 
 
@@ -1279,6 +1294,4 @@ footer {
   .map-block {
     flex-direction: row;
   }
-
-
 }
