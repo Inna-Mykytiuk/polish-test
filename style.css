@@ -372,9 +372,14 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 50px;
 }
 
-.hero-img {
-  display: block;
+.hero-img__block {
   height: 183px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .section-title {
@@ -1127,9 +1132,13 @@ footer {
     gap: 10px;
   }
 
-  .hero-img {
+  .hero-img__block {
     height: 456px;
   }
+
+  /* .hero-img {
+    height: 456px;
+  } */
 
   .hero-section {
     margin-top: 87px;
