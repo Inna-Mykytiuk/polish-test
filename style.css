@@ -37,6 +37,8 @@ body {
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
+
+  scroll-behavior: unset;
 }
 
 main {
@@ -778,7 +780,7 @@ button {
 
 .title-section {
   width: 100%;
-  margin-top: 194px;
+  margin-top: 94px;
 }
 
 .title-content {
@@ -801,7 +803,7 @@ button {
 .title-content h2 {
   color: #CC8E1E;
   font-family: "Oranienbaum", serif;
-  font-size: 82px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: 90%;
@@ -823,11 +825,12 @@ button {
 .contact-block {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 85px 0;
+  padding: 55px 10px;
   background: white;
-  margin-top: 160px;
+  margin-top: 60px;
   gap: 150px;
 }
 
@@ -868,7 +871,6 @@ button {
   flex-direction: column;
 }
 
-
 .contact-adress p:nth-child(1) {
   color: #FFF;
 
@@ -883,7 +885,8 @@ button {
 .contact-adress p span {
   color: #FFF;
 
-  font-family: Oranienbaum;
+  font-family: "Oranienbaum",
+    serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -893,7 +896,8 @@ button {
 .contact-adress span {
   color: #FFF;
 
-  font-family: Oranienbaum;
+  font-family: "Oranienbaum",
+    serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -905,9 +909,9 @@ button {
   width: 100%;
   display: block;
   z-index: -1;
-  width: 386px;
-  top: -175px;
-  left: -90px;
+  width: 300px;
+  top: -85px;
+  left: -40px;
 }
 
 .contact-list {
@@ -929,11 +933,121 @@ button {
 
   fill: #CC8E1E;
   transition: all .3s ease;
-
 }
+
+.contact-icon.footer {
+  fill: #2B3F5B;
+}
+
+/* .contact-icon.footer.facebook {
+  fill: #2B3F5B;
+} */
 
 .contact-icon:hover {
   fill: #926514;
+}
+
+
+/*footer*/
+
+footer {
+  width: 100%;
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.footer-block__first {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.footer-img {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-block__second {
+  display: flex;
+  flex-direction: column;
+  /* margin-right: auto; */
+}
+
+.footer-block__second ul {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-block__second ul li a {
+  color: #CC8E1E;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all .3s ease;
+}
+
+.footer-block__second ul li a:hover {
+  color: var(--text-main);
+}
+
+/* .footer-block__third {
+  margin-left: 102px;
+} */
+
+.footer-block__third ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-block__third li a {
+  color: #CC8E1E;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.footer-block__third li a:hover {
+  color: var(--text-main);
+}
+
+.footer-second__links {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.footer-second__links a {
+  width: 270px;
+  color: #2B3F5B;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  transition: all .3s ease;
+}
+
+.footer-second__links a:hover {
+  color: var(--accent-color);
 }
 
 
@@ -991,7 +1105,16 @@ button {
   .price-block {
     max-height: 762px;
   }
+
+  .title-section {
+    margin-top: 194px;
+  }
+
+
 }
+
+
+
 
 
 @media (min-width: 1040px) {
@@ -1006,6 +1129,28 @@ button {
   .swiper {
     width: 837px;
   }
+
+  .title-content h2 {
+    font-size: 82px;
+  }
+
+  footer {
+    margin-top: 190px;
+  }
+
+  .footer-block__third {
+    margin-left: 102px;
+  }
+
+  .footer-block__first {
+    margin-right: 32px;
+    width: 295px;
+  }
+
+  .footer-block__second {
+    margin-right: auto;
+  }
+
 }
 
 
@@ -1036,4 +1181,32 @@ button {
   .price-header p {
     font-size: 32px;
   }
+
+  .contact-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 0;
+    background: white;
+    margin-top: 160px;
+    gap: 150px;
+  }
+
+  .icon-map {
+    position: absolute;
+    width: 100%;
+    display: block;
+    z-index: -1;
+    width: 386px;
+    top: -130px;
+    left: -90px;
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+
+
 }
